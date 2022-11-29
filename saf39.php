@@ -1,0 +1,23 @@
+<body>
+<?php
+if (isset($_POST['sumbit'])){
+    $n1=$_POST['n1'];
+    $n2=$_POST['n2'];
+    $n3=$_POST['n3'];
+    $max=$n1;
+    if ($n2>$max) $max=$n2;
+    if ($n3>$max) $max=$n3;
+    echo $max;
+}
+?>
++<form method="post">
+    <label> number1:</label><br/>
+    <input type="number" name="n1"/><br/>
+    <label> number2:</label><br/>
+    <input type="number" name="n2"/><br/>
+    <label> number3:</label><br/>
+    <input type="number" name="n3"/><br/>
+    <input type="submit" name="sumbit" value="run">
+</form>
+
+</form>
